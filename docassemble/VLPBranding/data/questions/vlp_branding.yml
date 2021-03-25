@@ -1,7 +1,11 @@
 ---
+objects:
+  - vlp_logo: DAStaticFile.using(filename="data/static/logo-vlp.png",alt_text="Volunteer Lawyers Project")
+  - lsc_logo: DAStaticFile.using(filename="data/static/lsc_logo.jpg", alt_text="Legal Services Corporation")
+---
 default screen parts:
   footer: |
-    <center>&copy; ${ today().year } [[FILE logo-vlp.png, 100px]](https://vlpnet.org/) </center>
+    <center>&copy; ${ today().year } [${ vlp_logo.show(width="100px") }](https://vlpnet.org/) </center>
 ---
 interview help:
   label: |
@@ -10,7 +14,7 @@ interview help:
     
     
     This tool was built with funding from the
-    [[FILE lsc_logo.jpg, None, Legal Services Corporation]](https://lsc.gov)
+    [${ lsc_logo }](https://lsc.gov)
     
     #### Authors
     * [Volunteer Lawyers Project](https://vlpnet.org) of the Boston Bar Association.
