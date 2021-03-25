@@ -1,0 +1,20 @@
+---
+default screen parts:
+  footer: |
+    <center>&copy; ${ today().year } [[FILE logo-vlp.png, 100px]](https://vlpnet.org/) </center>
+---
+interview help:
+  label: |
+    About this tool
+  content: |
+    
+    
+    This tool was built with funding from the
+    [[FILE lsc_logo.jpg, None, Legal Services Corporation]](https://lsc.gov)
+    
+    #### Authors
+    * [Volunteer Lawyers Project](https://vlpnet.org) of the Boston Bar Association.
+    * [Quinten Steenhuis](https://nonprofittechy.com)
+    * Kendall Garner
+    * Mia Bonardi
+    * Aubrie Souza
