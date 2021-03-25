@@ -1,11 +1,14 @@
 ---
 objects:
-  - vlp_logo: DAStaticFile.using(filename="data/static/logo-vlp.png",alt_text="Volunteer Lawyers Project")
-  - lsc_logo: DAStaticFile.using(filename="data/static/lsc_logo.jpg", alt_text="Legal Services Corporation")
+  - vlp_logo: DAStaticFile.using(filename="docassemble.VLPBranding:data/static/logo-vlp.png",alt_text="Volunteer Lawyers Project")
+  - lsc_logo: DAStaticFile.using(filename="docassemble.VLPBranding:data/static/lsc_logo.jpg", alt_text="Legal Services Corporation")
 ---
 default screen parts:
   footer: |
     <center>&copy; ${ today().year } [${ vlp_logo.show(width="100px") }](https://vlpnet.org/) </center>
+---
+#mandatory: True
+question: Test
 ---
 interview help:
   label: |
