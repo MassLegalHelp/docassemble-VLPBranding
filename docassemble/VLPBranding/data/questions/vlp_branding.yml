@@ -13,15 +13,14 @@ question: Test
 interview help:
   label: |
     About this tool
-  content: |
-    
-    
+  content: |        
     This tool was built with funding from the
     [${ lsc_logo }](https://lsc.gov)
     
     #### Authors
     * [Volunteer Lawyers Project](https://vlpnet.org) of the Boston Bar Association.
-    * [Quinten Steenhuis](https://nonprofittechy.com)
-    * Kendall Garner
-    * Mia Bonardi
-    * Aubrie Souza
+    % if all_variables(special='metadata').get('authors'):
+    % for author in all_variables(special='metadata').get('authors'):
+    * ${ author }
+    % endfor
+    % endif

@@ -43,7 +43,7 @@ def find_package_data(where='.', package='', exclude=standard_exclude, exclude_d
     return out
 
 setup(name='docassemble.VLPBranding',
-      version='0.0.2',
+      version='1.0.0',
       description=('A docassemble extension.'),
       long_description="Just some branding that can be included for VLP Boston's Docassemble projects.",
       long_description_content_type='text/markdown',
